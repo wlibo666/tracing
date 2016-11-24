@@ -1,0 +1,23 @@
+{
+    "app_name":"s3",
+    "trace_implement":"appdash",
+    "collector_type":"tcp",
+    "collector_tcp":{
+        "addr":"127.0.0.1:1300"
+    },
+    "collector_http":{
+        "addr":"http://10.135.29.168:1127/trace/",
+        "user":"",
+        "pwd":""
+    },
+    "collector_kafka":{
+        "addr":"10.135.29.168:2560,10.135.29.171,2560",
+        "user":"",
+        "pwd":"",
+        "topic":"tracer"
+    },
+    "collector_info":{
+        "commit_interval":5,
+        "commit_min_traces":100
+    }
+}
